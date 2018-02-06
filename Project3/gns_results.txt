@@ -1,0 +1,13 @@
+GNS - threads:1 swaps:1000 array_size:6
+GNS - threads:1 swaps:100000 array_size:6
+GNS - threads:1 swaps:10000000 array_size:6
+GNS - threads:2 swaps:1000 array_size:6
+GNS - threads:2 swaps:100000 array_size:6
+GNS - threads:2 swaps:10000000 array_size:6
+GNS - threads:4 swaps:1000 array_size:6
+GNS - threads:4 swaps:100000 array_size:6
+GNS - threads:4 swaps:10000000 array_size:6
+GNS - threads:8 swaps:1000 array_size:6
+GNS - threads:8 swaps:100000 array_size:6
+GNS - threads:8 swaps:10000000 array_size:6
+GNS - threads:16 swaps:1000 array_size:6
