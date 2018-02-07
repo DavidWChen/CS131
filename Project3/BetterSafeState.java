@@ -13,7 +13,7 @@ class BetterSafeState implements State {
 
     public byte[] current() { return value; }
 
-    public synchronized boolean swap(int i, int j) {
+    public boolean swap(int i, int j) {
         lock.lock();
         if (value[i] <= 0 || value[j] >= maxval) 
         {
