@@ -70,3 +70,75 @@ Null - threads:32 swaps:100000 array_size:16
 Threads average 9825.94 ns/transition
 Null - threads:32 swaps:10000000 array_size:16
 Threads average 624.384 ns/transition
+Null - threads:1 swaps:1000 array_size:6
+Threads average 2969.64 ns/transition
+Null - threads:1 swaps:100000 array_size:6
+Threads average 175.600 ns/transition
+Null - threads:1 swaps:10000000 array_size:6
+Threads average 10.8510 ns/transition
+Null - threads:2 swaps:1000 array_size:6
+Threads average 5628.82 ns/transition
+Null - threads:2 swaps:100000 array_size:6
+Threads average 302.950 ns/transition
+Null - threads:2 swaps:10000000 array_size:6
+Threads average 15.3936 ns/transition
+Null - threads:4 swaps:1000 array_size:6
+Threads average 12906.3 ns/transition
+Null - threads:4 swaps:100000 array_size:6
+Threads average 900.317 ns/transition
+Null - threads:4 swaps:10000000 array_size:6
+Threads average 50.0607 ns/transition
+Null - threads:8 swaps:1000 array_size:6
+Threads average 26223.7 ns/transition
+Null - threads:8 swaps:100000 array_size:6
+Threads average 1212.57 ns/transition
+Null - threads:8 swaps:10000000 array_size:6
+Threads average 148.887 ns/transition
+Null - threads:16 swaps:1000 array_size:6
+Threads average 63437.5 ns/transition
+Null - threads:16 swaps:100000 array_size:6
+Threads average 2748.01 ns/transition
+Null - threads:16 swaps:10000000 array_size:6
+Threads average 523.808 ns/transition
+Null - threads:32 swaps:1000 array_size:6
+Threads average 142927 ns/transition
+Null - threads:32 swaps:100000 array_size:6
+Threads average 11449.5 ns/transition
+Null - threads:32 swaps:10000000 array_size:6
+Threads average 1406.48 ns/transition
+Null - threads:1 swaps:1000 array_size:16
+Threads average 2902.76 ns/transition
+Null - threads:1 swaps:100000 array_size:16
+Threads average 181.860 ns/transition
+Null - threads:1 swaps:10000000 array_size:16
+Threads average 15.8762 ns/transition
+Null - threads:2 swaps:1000 array_size:16
+Threads average 5616.59 ns/transition
+Null - threads:2 swaps:100000 array_size:16
+Threads average 558.792 ns/transition
+Null - threads:2 swaps:10000000 array_size:16
+Threads average 19.2180 ns/transition
+Null - threads:4 swaps:1000 array_size:16
+Threads average 12477.5 ns/transition
+Null - threads:4 swaps:100000 array_size:16
+Threads average 961.379 ns/transition
+Null - threads:4 swaps:10000000 array_size:16
+Threads average 52.1660 ns/transition
+Null - threads:8 swaps:1000 array_size:16
+Threads average 27891.3 ns/transition
+Null - threads:8 swaps:100000 array_size:16
+Threads average 1461.19 ns/transition
+Null - threads:8 swaps:10000000 array_size:16
+Threads average 118.392 ns/transition
+Null - threads:16 swaps:1000 array_size:16
+Threads average 61205.9 ns/transition
+Null - threads:16 swaps:100000 array_size:16
+Threads average 5745.42 ns/transition
+Null - threads:16 swaps:10000000 array_size:16
+Threads average 296.807 ns/transition
+Null - threads:32 swaps:1000 array_size:16
+Threads average 167866 ns/transition
+Null - threads:32 swaps:100000 array_size:16
+Threads average 12239.0 ns/transition
+Null - threads:32 swaps:10000000 array_size:16
+Threads average 866.491 ns/transition
