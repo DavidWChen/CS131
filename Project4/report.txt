@@ -1,0 +1,78 @@
+%%kenken statistics
+
+measurement were taken with statistics/0 on
+kenken4(
+  4,
+  [
+   +(6, [[1|1], [1|2], [2|1]]),
+   *(96, [[1|3], [1|4], [2|2], [2|3], [2|4]]),
+   -(1, [3|1], [3|2]),
+   -(1, [4|1], [4|2]),
+   +(8, [[3|3], [4|3], [4|4]]),
+   *(2, [[3|4]])
+  ]
+ ).
+
+%kenken
+Times              since start      since last
+
+   user   time       1.315 sec       0.001 sec
+   system time       0.035 sec       0.002 sec
+   cpu    time       1.350 sec       0.003 sec
+   real   time     448.686 sec       5.238 sec
+
+%plain_kenken
+Times              since start      since last
+
+   user   time       1.314 sec       0.526 sec
+   system time       0.033 sec       0.006 sec
+   cpu    time       1.347 sec       0.532 sec
+   real   time     443.448 sec     236.994 sec
+
+plain_kenken is notably slower than kenken.
+
+
+Design a good application programming interface for your solver, i.e., specify what Prolog terms should be passed to your solver and what the caller should expect should happen to those terms after successful and unsuccessful calls. Also, give an example call, and its behavior, using the style shown below. You do not need to implement the solver, only specify its API and implement a predicate noop_kenken_testcase that performs your example call.
+
+%noop_kenken/3
+	N = integer describing the number of columns and rows in the puzzle
+ 	C = a list of constraints, where each contraint is in the format:
+ 		(Num, [[I0|J0], [I1|J1], [I2|J2]])
+ 		where Num ist the contraining number and the following [I|J]'s refer to which cells the Num applies to.
+ 	T = a list of list of integers. All the lists have length N. This represents the N×N grid.
+ 
+ noop_kenen will function simularly to kenken, with the sole difference being that the constraint will check all 4 operations, instead of speacializing the constraints. This is probably not the most efficient solver, but it will work, albeit in a brute force manner. An example of a noop_kenken would look as follows:
+
+ noop_kenken_sample(
+  6,
+  [
+   (11, [[1|1], [2|1]]),
+   (2, [1|2], [1|3]),
+   (20, [[1|4], [2|4]]),
+   (6, [[1|5], [1|6], [2|6], [3|6]]),
+   (3, [2|2], [2|3]),
+   (3, [2|5], [3|5]),
+   (240, [[3|1], [3|2], [4|1], [4|2]]),
+   (6, [[3|3], [3|4]]),
+   (6, [[4|3], [5|3]]),
+   (7, [[4|4], [5|4], [5|5]]),
+   (30, [[4|5], [4|6]]),
+   (6, [[5|1], [5|2]]),
+   (9, [[5|6], [6|6]]),
+   (8, [[6|1], [6|2], [6|3]]),
+   (2, [6|4], [6|5])
+  ]
+).
+
+%%kenken.pl inspirational source material (also SWI's transpose)
+
+%kenken
+https://stackoverflow.com/questions/7175258/prolog-generating-list-of-numbers-fitting-given-range
+https://stackoverflow.com/questions/4280986/how-to-transpose-a-matrix-in-prolog
+https://stackoverflow.com/questions/29868770/swi-prolog-matrix-how-to-find-the-value-of-an-element-by-indexes
+https://stackoverflow.com/questions/10707737/recursion-in-prolog-using-append
+
+%plain_kenken
+https://stackoverflow.com/questions/7432156/prolog-list-of-numbers
+https://stackoverflow.com/questions/4578755/permuted-combinations-of-the-elements-of-a-list-prolog
+https://stackoverflow.com/questions/20131904/check-if-all-numbers-in-a-list-are-different-in-prolog
